@@ -1,0 +1,43 @@
+body {
+    background: blanchedalmond;
+  }
+  div{
+    border: 1px solid black;
+  }
+  .container {
+    display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+   min-height: 100vh;
+  }
+  .a{
+  background-color: cadetblue;
+  }
+  .b{
+  background-color: yellowgreen;
+  }
+  .c{
+  background-color: coral;
+  }
+  .a, .c  {
+    flex-grow: 1;
+  }
+  
+  .b {
+    flex-grow:3;
+  }
+  
+  
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .a {
+      width: 100%;
+    }
+    .a, .b, .c {
+      margin: 1em;
+    }
+  }
+  
