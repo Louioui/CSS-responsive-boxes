@@ -42,7 +42,6 @@ body {
   }
   .a, .f, main, .wrapper  {
     flex-grow: 1;
-    margin: .5em;
     max-height: 10vh;
   }
   
